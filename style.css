@@ -220,7 +220,7 @@ button:hover {
  
   }
 
-  @media only screen and (min-width: 841px) and (max-width: 1400px) {
+  @media only screen and (min-width: 841px) and (max-width: 1500px) {
     #weather-container {
         max-width: 500px;
         padding: 25px;
