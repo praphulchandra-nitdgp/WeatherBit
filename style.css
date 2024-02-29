@@ -121,9 +121,45 @@ button:hover {
     margin-top: 10px;
 }
 
-/* xs devices */
+/* responsive */
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 450px) {
+    #weather-container {
+        max-width: 320px;
+        padding: 13px;
+    }
+    h2{
+        font-size: 19px;
+    }
+    #temp-div p {
+        font-size: 40px;
+    }
+    input {
+        width: calc(100% - 50px);
+        padding: 7px;
+        margin-top: 15px;
+    }
+    #weather-icon {
+        width: 150px;
+        height: 150px; 
+    }
+    #weather-info {
+        font-size: 17px;
+    }
+    .hourly-item img {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 4px;
+    }
+    button {
+        padding: 8px;
+        margin-top: 17px;
+        width: 90px;
+        font-size: 13px;
+    }
+ 
+  }
+@media only screen and (min-width: 451px) and (max-width: 530px) {
     #weather-container {
         max-width: 350px;
         padding: 15px;
@@ -151,9 +187,13 @@ button:hover {
         height: 25px;
         margin-bottom: 4px;
     }
- 
+    button {
+        padding: 7px;
+        margin-top: 19px;
+        width: 92px;
+        font-size: 14px;
+    }
   }
-/* sm devices */
   @media only screen and (min-width: 531px) and (max-width: 840px) {
     #weather-container {
         max-width: 400px;
@@ -179,7 +219,7 @@ button:hover {
     }
  
   }
-/* md and lg devices */
+
   @media only screen and (min-width: 841px) and (max-width: 1400px) {
     #weather-container {
         max-width: 500px;
