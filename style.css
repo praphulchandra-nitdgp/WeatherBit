@@ -196,7 +196,7 @@ button:hover {
   }
   @media only screen and (min-width: 531px) and (max-width: 840px) {
     #weather-container {
-        max-width: 400px;
+        max-width: 450px;
         padding: 20px;
     }
     h2{
@@ -226,14 +226,14 @@ button:hover {
         padding: 25px;
     }
     h2{
-        font-size: 27px;
+        font-size: 30px;
     }
     #temp-div p {
         font-size: 50px;
     }
     input {
         width: calc(100% - 50px);
-        padding: 10px;
+        padding: 12px;
         margin-top: 15px;
     }
     #weather-icon {
@@ -242,6 +242,9 @@ button:hover {
     }
     #weather-info {
         font-size: 25px;
+    }
+    #city{
+        font-size: 15px;
     }
  
   }
