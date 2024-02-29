@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherBit</title>
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    
+    <div id="weather-container">
+        <h2>WeatherBit</h2>
+        <input type="text" id="city" placeholder="Enter city">
+        <button onclick="getWeather()">Search</button>
+        <div class="body">
+            <img id="weather-icon" alt="Weather Icon">
+
+            <div id="temp-div"></div>
+
+            <div id="weather-info"></div>
+
+            <div id="hourly-forecast"></div>
+        </div>
+      <!--  <div class="detail">
+            <div class="col">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <h5 id="humidity">20%</h5>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <h5 id="speed">4.1 m/s</h5>
+                    <p>WindSpeed</p>
+                </div>
+            </div>
+            </div>
+        </div>  -->
+    </div>
+     <script src="./script.js"></script> 
+</body>
+</html>
