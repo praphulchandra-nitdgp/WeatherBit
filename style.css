@@ -120,3 +120,89 @@ button:hover {
     color: #fff;
     margin-top: 10px;
 }
+
+/* xs devices */
+
+@media only screen and (max-width: 530px) {
+    #weather-container {
+        max-width: 350px;
+        padding: 15px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    #temp-div p {
+        font-size: 45px;
+    }
+    input {
+        width: calc(100% - 50px);
+        padding: 7px;
+        margin-top: 15px;
+    }
+    #weather-icon {
+        width: 170px;
+        height: 170px; 
+    }
+    #weather-info {
+        font-size: 19px;
+    }
+    .hourly-item img {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 4px;
+    }
+ 
+  }
+/* sm devices */
+  @media only screen and (min-width: 531px) and (max-width: 840px) {
+    #weather-container {
+        max-width: 400px;
+        padding: 20px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    #temp-div p {
+        font-size: 50px;
+    }
+    input {
+        width: calc(100% - 50px);
+        padding: 7px;
+        margin-top: 15px;
+    }
+    #weather-icon {
+        width: 190px;
+        height: 190px; 
+    }
+    #weather-info {
+        font-size: 21px;
+    }
+ 
+  }
+/* md and lg devices */
+  @media only screen and (min-width: 841px) and (max-width: 1400px) {
+    #weather-container {
+        max-width: 500px;
+        padding: 25px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    #temp-div p {
+        font-size: 50px;
+    }
+    input {
+        width: calc(100% - 50px);
+        padding: 10px;
+        margin-top: 15px;
+    }
+    #weather-icon {
+        width: 200px;
+        height: 200px; 
+    }
+    #weather-info {
+        font-size: 25px;
+    }
+ 
+  }
+
