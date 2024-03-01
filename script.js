@@ -36,12 +36,14 @@ function displayWeather(data) {
     const weatherInfoDiv = document.getElementById('weather-info');
     const weatherIcon = document.getElementById('weather-icon');
     const hourlyForecastDiv = document.getElementById('hourly-forecast');
-
+    const humidityDiv = document.getElementById('humidity');
+    const windSpeedDiv = document.getElementById('speed');
       // Clear previous content
       weatherInfoDiv.innerHTML = '';
       hourlyForecastDiv.innerHTML = '';
       tempDivInfo.innerHTML = '';
-    
+      humidityDiv.innerHTML = '';
+      windSpeedDiv.innerHTML = '';
   
       if (data.cod === '404') {
           weatherInfoDiv.innerHTML = `<p>${data.message}</p>`;
@@ -51,7 +53,8 @@ function displayWeather(data) {
           const description = data.weather[0].description;
           const iconCode = data.weather[0].icon;
           const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
-  
+          const humidity = data.main.humidity;
+          const windSpeed = data.wind.speed;
           const temperatureHTML = `
               <p>${temperature}°C</p>
           `;
@@ -60,12 +63,22 @@ function displayWeather(data) {
               <p>${cityName}</p>
               <p>${description}</p>
               `;
-        
+          const humidityHTML = `
+           <i class="fa-solid fa-droplet"></i>
+              <p>${humidity}%</p>
+              <p>Humidity</p>
+            `;
+           const windSpeedHTML = `
+           <i class="fa-solid fa-wind"></i>
+              <p>${windSpeed}m/s</p>
+              <p>WindSpeed</p>
+            `;
           tempDivInfo.innerHTML = temperatureHTML;
           weatherInfoDiv.innerHTML = weatherHtml;
           weatherIcon.src = iconUrl;
           weatherIcon.alt = description;
-        
+          humidityDiv.innerHTML = humidityHTML;
+          windSpeedDiv.innerHTML =  windSpeedHTML;
          
 
           showImage();
