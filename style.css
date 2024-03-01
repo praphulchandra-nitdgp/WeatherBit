@@ -35,7 +35,7 @@ input {
     margin-top: 20px;
 }
 button {
-    background: #debff4;
+    background: #6c87f5;
     color: white;
     padding: 10px;
     border: none;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-    background: #8b48d7;
+    background: rgb(69, 79, 171);
 }
 .detail{
     display: flex;
