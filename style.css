@@ -65,10 +65,6 @@ button:hover {
 .col i{
     font-size: 25px;
 }
-.col h5{
-    color: white;
-    font-size: 18px;
-}
 .col p{
     color: white;
     font-size: 17px;  
@@ -157,7 +153,14 @@ button:hover {
         width: 90px;
         font-size: 13px;
     }
- 
+    .col i{
+        font-size: 19px;
+
+    }
+    .col p{
+        font-size: 12px;
+
+    }
   }
 @media only screen and (min-width: 451px) and (max-width: 530px) {
     #weather-container {
@@ -193,6 +196,14 @@ button:hover {
         width: 92px;
         font-size: 14px;
     }
+    .col i{
+        font-size: 22px;
+
+    }
+    .col p{
+        font-size: 14px;
+
+    }
   }
   @media only screen and (min-width: 531px) and (max-width: 840px) {
     #weather-container {
@@ -216,6 +227,14 @@ button:hover {
     }
     #weather-info {
         font-size: 21px;
+    }
+    .col i{
+        font-size: 23px;
+
+    }
+    .col p{
+        font-size: 15px;
+
     }
  
   }
